@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Connect 4</title>
+</head>
+<body>
+
+    <div class="board">
+        <div id="grid">
+            <div class="column col-1">
+                <div class="row row-5 35">5</div>
+                <div class="row row-4 28">4</div>
+                <div class="row row-3 21">3</div>
+                <div class="row row-2 14">2</div>
+                <div class="row row-1 7">1</div>
+                <div class="row row-0 0">00</div>
+            </div>
+            <div class="column col-2">
+                <div class="row row-5 36">5</div>
+                <div class="row row-4 29">4</div>
+                <div class="row row-3 22">3</div>
+                <div class="row row-2 15">2</div>
+                <div class="row row-1 8">1</div>
+                <div class="row row-0 1">01</div>
+            </div>
+            <div class="column col-3">
+                <div class="row row-5 37">5</div>
+                <div class="row row-4 30">4</div>
+                <div class="row row-3 23">3</div>
+                <div class="row row-2 16">2</div>
+                <div class="row row-1 9">1</div>
+                <div class="row row-0 2">02</div>
+            </div>
+            <div class="column col-4">
+                <div class="row row-5 38">5</div>
+                <div class="row row-4 31">4</div>
+                <div class="row row-3 24">3</div>
+                <div class="row row-2 17">2</div>
+                <div class="row row-1 10">1</div>
+                <div class="row row-0 3">03</div>
+            </div>
+            <div class="column col-5">
+                <div class="row row-5 39">5</div>
+                <div class="row row-4 32">4</div>
+                <div class="row row-3 25">3</div>
+                <div class="row row-2 18">2</div>
+                <div class="row row-1 11">1</div>
+                <div class="row row-0 4">04</div>
+            </div>
+            <div class="column col-6">
+                <div class="row row-5 40">5</div>
+                <div class="row row-4 33">4</div>
+                <div class="row row-3 26">3</div>
+                <div class="row row-2 19">2</div>
+                <div class="row row-1 12">1</div>
+                <div class="row row-0 5">05</div>
+            </div>
+            <div class="column col-7">
+                <div class="row row-5 41">5</div>
+                <div class="row row-4 34">4</div>
+                <div class="row row-3 27">3</div>
+                <div class="row row-2 20">2</div>
+                <div class="row row-1 13">1</div>
+                <div class="row row-0 6">06</div>
+            </div>
+            </div>
+        </div>
+
+<div id="game-text">
+    <div>
+        <h2>Current player: <div id="current-player"></div></h2>
+    </div>
+    <div>
+        <button id="reset">New Game</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+
