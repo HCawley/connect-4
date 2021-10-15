@@ -11,15 +11,15 @@ columns.forEach((column) => {
       //on click, check all circles below if include yellow/red
       //if not, change colour on bottom available circle
         if (element.classList.contains("yellows-turn") || element.classList.contains("reds-turn")) {
-          continue; // Loop specific keyword for go to next loop
-        } else if (yellowsTurn === true) { //if it is yellows turn
-          element.classList.add("yellows-turn") + //add yellow circle to clicked column
+          continue;
+        } else if (yellowsTurn === true) {
+          element.classList.add("yellows-turn") +
           (displayCurrentPlayer.innerHTML = "Reds turn"); 
           break;
-        } else if (yellowsTurn === false) { //if it is reds turn
+        } else if (yellowsTurn === false) {
           element.classList.add("reds-turn") +
-          (displayCurrentPlayer.innerHTML = "Yellows turn"); //add red circle to clicked column
-          break; // Loop specific keyword for kill the loop
+          (displayCurrentPlayer.innerHTML = "Yellows turn");
+          break;
         } 
       };
 
@@ -29,10 +29,10 @@ columns.forEach((column) => {
       for (let i = 0; i < 3; i++) {
 
         if (
-          column.children[i].classList.contains("yellows-turn") && //if the bottom circle is yellow
-          column.children[i + 1].classList.contains("yellows-turn") && // if the bottom circle and the first circle is yellow
-          column.children[i + 2].classList.contains("yellows-turn") && // if the bottom circle and first 2 circles are yellow
-          column.children[i + 3].classList.contains("yellows-turn") // if the bottom circle and next 3 circles are yellow
+          column.children[i].classList.contains("yellows-turn") &&
+          column.children[i + 1].classList.contains("yellows-turn") && 
+          column.children[i + 2].classList.contains("yellows-turn") && 
+          column.children[i + 3].classList.contains("yellows-turn")
         ) { 
           setTimeout(function() 
           {alert("Yellow wins!"); }, 500);
@@ -53,7 +53,6 @@ columns.forEach((column) => {
       
       for (let j = 0; j < 3; j++) {
         
-        // console.log("i: ", i, "j: ", j)
         if (
           row[j].classList.contains("yellows-turn") && 
           row[j + 1].classList.contains("yellows-turn") &&
@@ -125,6 +124,5 @@ columns.forEach((column) => {
 });
 document.querySelector("#reset").addEventListener("click", () => {
   location.reload()
-
 })
 });
