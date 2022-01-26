@@ -5,11 +5,9 @@ let yellowsTurn = true;
  
 columns.forEach((column) => {
     column.addEventListener("click", () => {
-    //loop through all circles below clicked column, bottom to top.
       for (let index = 5; index >= 0; index--) {
         const element = column.children[index];
-      //on click, check all circles below if include yellow/red
-      //if not, change colour on bottom available circle
+
         if (element.classList.contains("yellows-turn") || element.classList.contains("reds-turn")) {
           continue;
         } else if (yellowsTurn === true) {
@@ -25,7 +23,7 @@ columns.forEach((column) => {
 
       //column check
       let i = 0;
-      //loop through 3 circles above and 3 cirlces below to check for 4 same colour
+  
       for (let i = 0; i < 3; i++) {
 
         if (
