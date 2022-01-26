@@ -1,10 +1,7 @@
 # connect-4
 
-I was challenged to make a game using HTML, CSS and Javascript.
-
--Players must connect 4 of the same coloured discs in a row to win.
--Only one piece is played at a time (yellow disc is first)
--The game ends when there is a 4-in-a-row.
+When a user clicks the column they want to play, a for loop checks the next available space in the column and plays the disk in that space. After each turn a for loop checks all four directions for four of the same colour disks consecutively - the winner is then alerted on the screen.
+The board can be cleared by the "New game" button.
 
 used:
 -DOM
