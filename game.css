@@ -1,0 +1,29 @@
+.yellows-turn {
+  background-color: yellow;
+}
+
+.reds-turn {
+  background-color: red;
+}
+
+button {
+  background-color: #299b7e;
+  color: white;
+  padding: 15px;
+}
+
+#game-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: Garamond, sans-serif;
+  color: darkslategray;
+  margin: auto;
+  height: 200px;
+  width: 300px;
+}
+
+#current-player {
+  font-size: medium;
+}
