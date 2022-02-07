@@ -11,7 +11,7 @@
   text-align: center;
   border: 2px solid black;
   margin: auto;
-  height: 82vh;
+  height: 80vh;
   width: 65vw;
 }
 
@@ -32,5 +32,6 @@
   border-radius: 25px;
   height: 60%;
   width: 60%;
-  margin: 4px;
+  margin: auto;
+  margin-top: 7px;
 }
